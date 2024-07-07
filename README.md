@@ -19,7 +19,7 @@ The purpose of this project was to demonstrate the knowledge acquired in HTML5 a
 
 ## Live Demo
 
-[Live Demo Link](https://aristides1000.github.io/tecnical-documentation-page-freecodecamp/)
+[Live Demo Link](https://aristides1000.github.io/product-landing-page-freecode-camp/)
 
 ## Getting Started
 

@@ -1,0 +1,304 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+  background-color: #EEEEEE;
+}
+
+header {
+  position: fixed;
+  top: 0rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  z-index: 1;
+}
+
+header div {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin: 1rem 0 1.5rem;
+}
+
+#header-img {
+  width: 2.5rem;
+}
+
+h2 {
+  font-family: "Times New Roman";
+}
+
+#nav-bar ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 0.25rem;
+}
+
+#nav-bar ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: 15px;
+}
+
+#email_form {
+  margin-top: 9rem;
+}
+
+h1, h3, p, h5, h4 {
+  text-align: center;
+}
+
+form {
+  margin: 1.5rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+}
+
+#email {
+  width: 17.2rem;
+  padding: 0.25rem 0.35rem;
+  border: 1px solid #767676;
+  font-size: 0.83rem;
+  background-color: white;
+  border-radius: 2px;
+}
+
+#submit {
+  font-weight: 650;
+  font-size: 1.1rem;
+  padding: 0.15rem 1.15rem;
+}
+
+#submit, button {
+  border: none;
+  background-color: #F1C40F;
+  transition: background-color 0s;
+}
+
+#submit:hover, button:hover {
+  background-color: orange;
+  transition: background-color 1s;
+}
+
+#email_form article {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+#email_form article div {
+  max-width: 1000px;
+}
+
+#email_form article div section {
+  margin: 5rem 0;
+}
+
+#email_form article div section h3 {
+  font-size: 1.5rem;
+  font-weight: 650;
+}
+
+#email_form article div section p {
+  font-size: 0.95rem;
+  font-weight: 450;
+}
+
+#how_it_works {
+  display: flex;
+  justify-content: center;
+}
+
+iframe {
+  width: 100%;
+  max-width: 560px;
+}
+
+#pricing {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 3.5rem 0 2.5rem;
+}
+
+#pricing article {
+  border: 1px solid black;
+  border-radius: 2px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 19rem;
+}
+
+#pricing article h5 {
+  width: 100%;
+  background-color: #DDDDDD;
+  padding: 1rem 0;
+  font-size: 1.05rem;
+  font-weight: 650;
+}
+
+#pricing article h4 {
+  margin: 1rem 0 0.7rem;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+#pricing article p span {
+  display: block;
+  margin: 0.5rem 0;
+  font-size: 0.95rem;
+  font-weight: 450;
+}
+
+#pricing article button {
+  margin: 1.5rem 0 1rem;
+  padding: 0.4rem 1.2rem;
+  font-size: 1.1rem;
+}
+
+footer section, footer section p, footer section p a {
+  background-color: #DDDDDD;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+}
+
+footer section {
+  width: 100%;
+  max-width: 1000px;
+  padding: 1rem 0;
+}
+
+footer section p {
+  text-align: right;
+  margin: 0 1rem;
+  color: #444;
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+footer section p:first-child {
+  margin-bottom: 0.2rem
+}
+
+footer section p a {
+  text-decoration: none;
+  margin: 0 0.5rem;
+  color: black;
+}
+
+#email_form article div section ion-icon {
+  display: none;
+}
+
+@media only screen and (min-width: 535px) {
+  #email_form article div section ion-icon {
+    display: block;
+    color: #FF8C00;
+    font-size: 3.5rem;
+    grid-area: icon;
+    place-self: center;
+  }
+
+  #email_form article div section h3 {
+    grid-area: title;
+    justify-self: start;
+  }
+
+  #email_form article div section p {
+    grid-area: paragraph;
+    justify-self: start;
+    text-align: left;
+  }
+
+  #email_form article div section {
+    margin: 3.5rem 1.5rem;
+    display: grid;
+    grid-template-columns: 17% 2% auto auto auto auto ;
+    grid-template-rows: auto;
+    grid-template-areas: 
+      "icon . title title title title"
+      "icon . paragraph paragraph paragraph paragraph";
+  }
+
+  #email_form article {
+    margin: 4rem 0 5rem;
+  }
+}
+
+@media only screen and (max-width: 654px) and (min-width: 605px) {
+  #header-img {
+    width: 14%;
+  }
+
+  header div {
+    width: 86%;
+  }
+}
+
+@media only screen and (min-width: 605px) {
+  header {
+    padding-left: 1.7rem;
+    flex-direction: row;
+  }
+
+  header div {
+    min-width: 280px;
+  }
+
+  header nav {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media only screen and (min-width: 655px) {
+  #email_form {
+    margin-top: 4.8rem;
+  }
+
+  #nav-bar ul {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  header nav {
+    width: 39%;
+    justify-content: flex-end;
+  }
+
+  header {
+    justify-content: space-between;
+  }
+}
+
+@media only screen and (min-width: 801px) {
+  #pricing {
+    flex-direction: row;
+    column-gap: initial;
+    justify-content: center;
+  }
+
+  #pricing article {
+    margin: 0 0.65rem;
+  }
+}
